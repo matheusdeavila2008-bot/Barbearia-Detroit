@@ -1,0 +1,172 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #000; 
+  color: #fff;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.trad {
+  position: fixed;      
+  top: 20px;            
+  left: 20px;            
+  z-index: 9999;        
+  padding: 8px 14px;
+  background-color: #666666;
+  color: white;
+  border: 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: bolder;
+
+}
+
+.trad:hover{
+  color: #fbfb20;
+  transform: scale(1.2);
+  transition: all 0.7s ease;
+}
+
+.top-bar {
+ border-radius: 60px;
+  background-color: #fbfb20;
+  padding: 15px 20px;
+  display: flex;
+}
+
+.top-bar a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.top-bar a:hover {
+  text-decoration:none;
+}
+
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.logos img {
+  max-width: 180px;
+  height: auto;
+}
+
+
+.price {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.price span {
+  color: #fbfb20;
+}
+
+
+.form-box {
+  background: #111;
+  padding: 25px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.form-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-box input,
+.form-box select {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.form-box input:focus,
+.form-box select:focus {
+  outline: none;
+  border-color: #fbfb20;
+}
+
+.btn-finalizar {
+  background-color: #fbfb20;
+  color: #000;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-finalizar:hover {
+  background-color: #ddac17;
+}
+
+
+.alertas {
+  margin: 30px 0;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.alert {
+  display: flex;
+  align-items: center;
+  background: #222;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  gap: 10px;
+}
+
+.alert img {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 768px) {
+  .logos img {
+    max-width: 120px;
+  }
+
+  .price {
+    font-size: 1.2rem;
+  }
+
+  .btn-finalizar {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
